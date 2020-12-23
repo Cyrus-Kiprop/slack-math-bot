@@ -8,6 +8,8 @@ ruby '2.6.6'
 
 gem 'calc'
 gem 'irb'
+gem 'mongoid'
+gem 'mongoid-scroll'
 gem 'newrelic-slack-ruby-bot'
 gem 'puma'
 gem 'slack-ruby-bot-server', '>= 1.1.0'
