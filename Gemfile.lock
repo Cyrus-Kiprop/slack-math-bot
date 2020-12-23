@@ -210,6 +210,7 @@ DEPENDENCIES
   database_cleaner
   fabrication
   faker
+  foreman
   irb
   mongoid
   mongoid-scroll
