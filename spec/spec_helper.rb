@@ -13,6 +13,21 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+
+
+ENV['RACK_ENV'] = 'test'
+
+$LOAD_PATH.unshift File.expand_path('..', __dir__)
+
+Dir[File.join(File.dirname(__FILE__), 'support', '**/*.rb')].sort.each do |file|
+  require file
+end
+
+require 'slack-ruby-bot-server/rspec'
+
+require_relative '../app'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
