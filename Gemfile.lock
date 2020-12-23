@@ -120,9 +120,10 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    passenger (6.0.7)
+      rack
+      rake (>= 0.8.1)
     public_suffix (4.0.6)
-    puma (5.1.1)
-      nio4r (~> 2.0)
     rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -215,7 +216,7 @@ DEPENDENCIES
   mongoid
   mongoid-scroll
   newrelic-slack-ruby-bot
-  puma
+  passenger
   rack-test
   rake
   rspec
