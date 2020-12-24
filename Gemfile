@@ -4,14 +4,15 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-ruby '2.6.6'
+ruby '2.7.2'
 
 gem 'calc'
 gem 'irb'
 gem 'mongoid'
 gem 'mongoid-scroll'
 gem 'newrelic-slack-ruby-bot'
-gem 'puma'
+gem 'passenger'
+gem 'foreman'
 gem 'slack-ruby-bot-server', '>= 1.1.0'
 gem 'slack-ruby-bot-server-events'
 
